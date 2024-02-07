@@ -16,8 +16,8 @@ public class Ejercicios extends javax.swing.JFrame {
     public Ejercicios() {
         initComponents();
         setBackground(new Color(0, 0, 0, 0));
-        menu.setSelectedMenu(4);
-        menu.setSelectedLocation(295);
+        menu.setSelectedMenu(5);
+        menu.setSelectedLocation(331);
         init();
     }
 
