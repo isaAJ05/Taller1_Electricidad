@@ -50,7 +50,9 @@ public class Dibujo4 extends javax.swing.JFrame {
                      //aqui estoy
                     
                 } else if (index == 5) {
-
+                    Ejercicios i = new Ejercicios();
+                    i.setVisible(true);
+                    thisFrame.setVisible(false);
                 }
             }
         });
