@@ -77,10 +77,11 @@ public class Dibujo3 extends javax.swing.JFrame {
         PanelInfo.setBackground(new java.awt.Color(255, 255, 255));
         PanelInfo.setPreferredSize(new java.awt.Dimension(979, 557));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gifs/polarizacion (1).gif"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gifs/polarizacion.gif"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Tekton Pro Cond", 0, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(76, 154, 198));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Polarización en un átomo aislante");
 
         javax.swing.GroupLayout PanelInfoLayout = new javax.swing.GroupLayout(PanelInfo);
@@ -88,7 +89,7 @@ public class Dibujo3 extends javax.swing.JFrame {
         PanelInfoLayout.setHorizontalGroup(
             PanelInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelInfoLayout.createSequentialGroup()
-                .addContainerGap(151, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(PanelInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -113,8 +114,7 @@ public class Dibujo3 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PanelInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 1008, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(PanelInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 1014, Short.MAX_VALUE))
         );
         panelBackground1Layout.setVerticalGroup(
             panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -122,9 +122,10 @@ public class Dibujo3 extends javax.swing.JFrame {
                 .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 554, Short.MAX_VALUE)
-                    .addComponent(PanelInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 554, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addGroup(panelBackground1Layout.createSequentialGroup()
+                        .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 585, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addComponent(PanelInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 591, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
