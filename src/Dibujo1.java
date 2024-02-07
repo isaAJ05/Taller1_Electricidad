@@ -50,7 +50,9 @@ public class Dibujo1 extends javax.swing.JFrame {
         i.setVisible(true);
         thisFrame.setVisible(false);
                 }else if (index == 5) {
-                    
+                    Ejercicios i = new Ejercicios();
+                    i.setVisible(true);
+                    thisFrame.setVisible(false); 
                 }
             }
         });
