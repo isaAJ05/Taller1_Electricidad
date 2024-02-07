@@ -95,7 +95,7 @@
           <Color blue="75" green="75" red="75" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Dashboard UI"/>
+        <Property name="text" type="java.lang.String" value="Nombre Programa"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
@@ -107,7 +107,7 @@
           <Color blue="9a" green="9a" red="9a" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Admin"/>
+        <Property name="text" type="java.lang.String" value="Taller#1 Fisica Electricidad"/>
       </Properties>
     </Component>
   </SubComponents>

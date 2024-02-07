@@ -54,13 +54,12 @@ public class Menu extends javax.swing.JPanel {
     }
 
     private void initMenu() {
-        addMenu("Inicio", "1", 0);
-        addMenu("Dibujo 1", "2", 1);
-        addMenu("Dibujo 2", "3", 2);
-        addMenu("Dibujo 3", "4", 3);
-        addMenu("Dibujo 4", "5", 4);
-        addMenu("Ejercicios", "6", 5);
-        addMenu("Config", "7", 6);
+        addMenu("<html><left>&nbsp; Inicio</left></html>", "0", 0);
+        addMenu("<html><left>&nbsp;  Carga por inducción</left></html>", "1", 1);
+        addMenu("<html><left>&nbsp;  Carga por contacto</left></html>", "2", 2);
+        addMenu("<html><left>&nbsp;  Polarización en un <br>&nbsp;  atomo aislante</center></left>", "3", 3);
+        addMenu("<html><left>&nbsp;  Carga inducida en la<br>&nbsp;  superficie de un aislante</left></html>", "4", 4);
+        addMenu("<html><left>&nbsp;  Ejercicios</left></html>", "5", 5);
         //  add more menu here
         menu.repaint();
         menu.revalidate();
@@ -90,7 +89,7 @@ public class Menu extends javax.swing.JPanel {
         m.setFont(m.getFont().deriveFont(Font.BOLD, 12));
         m.setForeground(new Color(127, 127, 127));
         m.setHorizontalAlignment(JButton.LEFT);
-        m.setText("  " + menuName);
+        m.setText(menuName );
         m.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -135,8 +134,8 @@ public class Menu extends javax.swing.JPanel {
     }
 
     private Shape createShape(int y) {
-        int width = getWidth() - 12;
-        int r = 20;
+        int width = getWidth() - 10;
+        int r = 35;
         Area area = new Area(new RoundRectangle2D.Float(6, y, width, 35, r, r));
         area.add(new Area(new RoundRectangle2D.Float(width - r + 6, y, r, r, 5, 5)));
         area.add(new Area(new RoundRectangle2D.Float(6, y + 35 - r, r, r, 5, 5)));
@@ -200,12 +199,12 @@ public class Menu extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(117, 117, 117));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Dashboard UI");
+        jLabel1.setText("Nombre Programa");
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(154, 154, 154));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Admin");
+        jLabel2.setText("Taller#1 Fisica Electricidad");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
