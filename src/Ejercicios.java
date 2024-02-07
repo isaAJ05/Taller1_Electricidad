@@ -259,24 +259,24 @@ public class Ejercicios extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnEjer3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjer3ActionPerformed
-        jScrollPane4.setVisible(true);
-        EJER1.setVisible(false);
-        EJER2.setVisible(false);
-        EJER4.setVisible(false);
-        EJER5.setVisible(false);
+        jScrollPane4.setVisible(true);jScrollPane4.setEnabled(true);jPanel3.setVisible(true);
+        EJER1.setVisible(false);EJER1.setEnabled(false);
+        EJER2.setVisible(false); EJER2.setEnabled(false);
+        EJER4.setVisible(false);EJER4.setEnabled(false);
+        EJER5.setVisible(false);EJER5.setEnabled(false);
     }//GEN-LAST:event_BtnEjer3ActionPerformed
 
     private void BtnEjer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjer1ActionPerformed
-        
-        EJER1.setVisible(true);
-        EJER2.setVisible(false);
-        EJER4.setVisible(false);
-        EJER5.setVisible(false);
-        jScrollPane4.setVisible(true);
+
+        EJER1.setVisible(true); EJER1.setEnabled(true); jPanel3.setVisible(false);
+        EJER2.setVisible(false);EJER2.setEnabled(false);
+        EJER4.setVisible(false); EJER4.setEnabled(false);
+        EJER5.setVisible(false);EJER5.setEnabled(false);
+        jScrollPane4.setVisible(true);jScrollPane4.setVisible(true);
     }//GEN-LAST:event_BtnEjer1ActionPerformed
 
     private void BtnEjer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjer2ActionPerformed
-        EJER2.setVisible(true);
+        EJER2.setVisible(true);jPanel3.setVisible(false);
         EJER1.setVisible(false);
         EJER4.setVisible(false);
         EJER5.setVisible(false);
@@ -284,7 +284,7 @@ public class Ejercicios extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnEjer2ActionPerformed
 
     private void BtnEjer4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjer4ActionPerformed
-      EJER4.setVisible(true);
+      EJER4.setVisible(true);jPanel3.setVisible(false);
       EJER2.setVisible(false);
         EJER1.setVisible(false);
         EJER5.setVisible(false);
@@ -292,7 +292,7 @@ public class Ejercicios extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnEjer4ActionPerformed
 
     private void BtnEjer5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjer5ActionPerformed
-       EJER5.setVisible(true);
+       EJER5.setVisible(true);jPanel3.setVisible(false);
        EJER4.setVisible(false);
       EJER2.setVisible(false);
         EJER1.setVisible(false);
