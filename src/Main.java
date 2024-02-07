@@ -54,7 +54,6 @@ Main thisFrame = this;
             }
         });
         
-        
         //mainBody.displayForm(new Home_Form());
     }
 
