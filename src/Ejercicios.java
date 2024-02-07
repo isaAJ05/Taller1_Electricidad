@@ -17,7 +17,7 @@ public class Ejercicios extends javax.swing.JFrame {
         menu.setSelectedMenu(5);
         menu.setSelectedLocation(331);
         jScrollPane4.setVisible(false);
-        EJER1.setVisible(false);EJER1.setEnabled(false);
+        EJER1.setVisible(true);EJER1.setEnabled(true);
         EJER2.setVisible(false); EJER2.setEnabled(false);
         EJER4.setVisible(false);EJER4.setEnabled(false);
         EJER5.setVisible(false);EJER5.setEnabled(false);
@@ -75,6 +75,7 @@ public class Ejercicios extends javax.swing.JFrame {
         EJER4 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         EJER2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         EJER1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -86,6 +87,7 @@ public class Ejercicios extends javax.swing.JFrame {
         BtnEjer3 = new javax.swing.JButton();
         BtnEjer4 = new javax.swing.JButton();
         BtnEjer5 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -94,6 +96,8 @@ public class Ejercicios extends javax.swing.JFrame {
 
         PanelInfo.setBackground(new java.awt.Color(255, 255, 255));
         PanelInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        EJER5.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gifs/lucifer es simp.gif"))); // NOI18N
 
@@ -116,6 +120,8 @@ public class Ejercicios extends javax.swing.JFrame {
 
         PanelInfo.add(EJER5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
 
+        EJER4.setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gifs/hell is forever.gif"))); // NOI18N
 
         javax.swing.GroupLayout EJER4Layout = new javax.swing.GroupLayout(EJER4);
@@ -133,18 +139,29 @@ public class Ejercicios extends javax.swing.JFrame {
 
         PanelInfo.add(EJER4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
 
+        EJER2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/EJERCICIO2.png"))); // NOI18N
+
         javax.swing.GroupLayout EJER2Layout = new javax.swing.GroupLayout(EJER2);
         EJER2.setLayout(EJER2Layout);
         EJER2Layout.setHorizontalGroup(
             EJER2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 907, Short.MAX_VALUE)
+            .addGroup(EJER2Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 857, Short.MAX_VALUE)
+                .addGap(23, 23, 23))
         );
         EJER2Layout.setVerticalGroup(
             EJER2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 599, Short.MAX_VALUE)
+            .addGroup(EJER2Layout.createSequentialGroup()
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 1955, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         PanelInfo.add(EJER2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
+
+        EJER1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/rushh8.png"))); // NOI18N
 
@@ -206,6 +223,8 @@ public class Ejercicios extends javax.swing.JFrame {
 
         PanelInfo.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
 
+        BtnEjer1.setBackground(new java.awt.Color(253, 250, 250));
+        BtnEjer1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         BtnEjer1.setText("1");
         BtnEjer1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -214,6 +233,8 @@ public class Ejercicios extends javax.swing.JFrame {
         });
         PanelInfo.add(BtnEjer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 16, -1, -1));
 
+        BtnEjer2.setBackground(new java.awt.Color(253, 250, 250));
+        BtnEjer2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         BtnEjer2.setText("2");
         BtnEjer2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -222,6 +243,8 @@ public class Ejercicios extends javax.swing.JFrame {
         });
         PanelInfo.add(BtnEjer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 16, -1, -1));
 
+        BtnEjer3.setBackground(new java.awt.Color(253, 250, 250));
+        BtnEjer3.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         BtnEjer3.setText("3");
         BtnEjer3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -230,6 +253,8 @@ public class Ejercicios extends javax.swing.JFrame {
         });
         PanelInfo.add(BtnEjer3, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 16, -1, -1));
 
+        BtnEjer4.setBackground(new java.awt.Color(253, 250, 250));
+        BtnEjer4.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         BtnEjer4.setText("4");
         BtnEjer4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -238,6 +263,8 @@ public class Ejercicios extends javax.swing.JFrame {
         });
         PanelInfo.add(BtnEjer4, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 16, -1, -1));
 
+        BtnEjer5.setBackground(new java.awt.Color(253, 250, 250));
+        BtnEjer5.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         BtnEjer5.setText("5");
         BtnEjer5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,6 +272,21 @@ public class Ejercicios extends javax.swing.JFrame {
             }
         });
         PanelInfo.add(BtnEjer5, new org.netbeans.lib.awtextra.AbsoluteConstraints(163, 16, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 204));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 910, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
+        );
+
+        PanelInfo.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 50));
 
         javax.swing.GroupLayout panelBackground1Layout = new javax.swing.GroupLayout(panelBackground1);
         panelBackground1.setLayout(panelBackground1Layout);
@@ -378,6 +420,8 @@ public class Ejercicios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane4;
     private com.raven.menu.Menu menu;
