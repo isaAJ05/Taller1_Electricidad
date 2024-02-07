@@ -8,10 +8,14 @@ import com.raven.theme.SystemTheme;
 import com.raven.theme.ThemeColor;
 import com.raven.theme.ThemeColorChange;
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 
 public class Dibujo2 extends javax.swing.JFrame {
 
-   // private Setting_Form settingForm;
+   private int currentIndex;
+   private String[] imagePaths = {"Gifs/CC1.png", "Gifs/CC2.png", "Gifs/CC3.png","Gifs/CC4.png"}; // Rutas de las imágenes en el directorio de recursos
 
     public Dibujo2() {
         initComponents();
@@ -19,6 +23,19 @@ public class Dibujo2 extends javax.swing.JFrame {
         menu.setSelectedMenu(2);
         menu.setSelectedLocation(223);
         init();
+        showImage(currentIndex);
+        prevButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                prevImage();
+            }
+        });
+        nextButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                nextImage();
+            }
+        });
     }
 
    Dibujo2 thisFrame = this;
@@ -57,6 +74,20 @@ public class Dibujo2 extends javax.swing.JFrame {
         
         //mainBody.displayForm(new Home_Form());
     }
+    private void showImage(int index) {
+        ImageIcon imageIcon = new ImageIcon(getClass().getResource(imagePaths[index]));
+        imageLabel.setIcon(imageIcon);
+    }
+
+    private void nextImage() {
+        currentIndex = (currentIndex + 1) % imagePaths.length;
+        showImage(currentIndex);
+    }
+
+    private void prevImage() {
+        currentIndex = (currentIndex - 1 + imagePaths.length) % imagePaths.length;
+        showImage(currentIndex);
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -66,23 +97,71 @@ public class Dibujo2 extends javax.swing.JFrame {
         header = new com.raven.component.Header();
         menu = new com.raven.menu.Menu();
         jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        imageLabel = new javax.swing.JLabel();
+        nextButton = new javax.swing.JButton();
+        prevButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         panelBackground1.setBackground(new java.awt.Color(34, 34, 34));
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel1.setText("Carga por Contacto: Ebonita y Esfera");
+
+        imageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gifs/CC1.png"))); // NOI18N
+
+        nextButton.setText("Siguiene");
+        nextButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextButtonActionPerformed(evt);
+            }
+        });
+
+        prevButton.setText("Anerior");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(213, 213, 213)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(imageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 635, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(56, 56, 56)
+                .addComponent(nextButton)
+                .addGap(53, 53, 53))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(42, 42, 42)
+                    .addComponent(prevButton)
+                    .addContainerGap(900, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(4, 4, 4)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(imageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(nextButton)
+                        .addGap(251, 251, 251))))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(245, 245, 245)
+                    .addComponent(prevButton)
+                    .addContainerGap(287, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout panelBackground1Layout = new javax.swing.GroupLayout(panelBackground1);
@@ -103,7 +182,7 @@ public class Dibujo2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelBackground1Layout.createSequentialGroup()
-                        .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 549, Short.MAX_VALUE)
+                        .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
@@ -122,6 +201,10 @@ public class Dibujo2 extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nextButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,8 +243,12 @@ public class Dibujo2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.raven.component.Header header;
+    private javax.swing.JLabel imageLabel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private com.raven.menu.Menu menu;
+    private javax.swing.JButton nextButton;
     private com.raven.swing.PanelBackground panelBackground1;
+    private javax.swing.JButton prevButton;
     // End of variables declaration//GEN-END:variables
 }
