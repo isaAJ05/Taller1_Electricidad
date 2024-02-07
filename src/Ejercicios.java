@@ -73,6 +73,7 @@ public class Ejercicios extends javax.swing.JFrame {
         EJER5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         EJER4 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         EJER2 = new javax.swing.JPanel();
         EJER1 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -114,15 +115,19 @@ public class Ejercicios extends javax.swing.JFrame {
 
         PanelInfo.add(EJER5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gifs/hell is forever.gif"))); // NOI18N
+
         javax.swing.GroupLayout EJER4Layout = new javax.swing.GroupLayout(EJER4);
         EJER4.setLayout(EJER4Layout);
         EJER4Layout.setHorizontalGroup(
             EJER4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 907, Short.MAX_VALUE)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 907, Short.MAX_VALUE)
         );
         EJER4Layout.setVerticalGroup(
             EJER4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 599, Short.MAX_VALUE)
+            .addGroup(EJER4Layout.createSequentialGroup()
+                .addComponent(jLabel3)
+                .addGap(0, 119, Short.MAX_VALUE))
         );
 
         PanelInfo.add(EJER4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
@@ -362,6 +367,7 @@ public class Ejercicios extends javax.swing.JFrame {
     private com.raven.component.Header header;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane4;
     private com.raven.menu.Menu menu;
