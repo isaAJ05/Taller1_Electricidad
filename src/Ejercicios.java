@@ -17,6 +17,10 @@ public class Ejercicios extends javax.swing.JFrame {
         menu.setSelectedMenu(5);
         menu.setSelectedLocation(331);
         jScrollPane4.setVisible(false);
+        EJER1.setVisible(false);EJER1.setEnabled(false);
+        EJER2.setVisible(false); EJER2.setEnabled(false);
+        EJER4.setVisible(false);EJER4.setEnabled(false);
+        EJER5.setVisible(false);EJER5.setEnabled(false);
         init();
     }
 
@@ -67,6 +71,7 @@ public class Ejercicios extends javax.swing.JFrame {
         menu = new com.raven.menu.Menu();
         PanelInfo = new javax.swing.JPanel();
         EJER5 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         EJER4 = new javax.swing.JPanel();
         EJER2 = new javax.swing.JPanel();
         EJER1 = new javax.swing.JPanel();
@@ -88,15 +93,23 @@ public class Ejercicios extends javax.swing.JFrame {
         PanelInfo.setBackground(new java.awt.Color(255, 255, 255));
         PanelInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gifs/lucifer es simp.gif"))); // NOI18N
+
         javax.swing.GroupLayout EJER5Layout = new javax.swing.GroupLayout(EJER5);
         EJER5.setLayout(EJER5Layout);
         EJER5Layout.setHorizontalGroup(
             EJER5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 907, Short.MAX_VALUE)
+            .addGroup(EJER5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addContainerGap(92, Short.MAX_VALUE))
         );
         EJER5Layout.setVerticalGroup(
             EJER5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 599, Short.MAX_VALUE)
+            .addGroup(EJER5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(146, Short.MAX_VALUE))
         );
 
         PanelInfo.add(EJER5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
@@ -348,6 +361,7 @@ public class Ejercicios extends javax.swing.JFrame {
     private javax.swing.JPanel PanelInfo;
     private com.raven.component.Header header;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane4;
     private com.raven.menu.Menu menu;
