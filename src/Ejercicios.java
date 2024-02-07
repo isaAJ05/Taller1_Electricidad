@@ -76,6 +76,7 @@ public class Ejercicios extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         EJER2 = new javax.swing.JPanel();
         EJER1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         jPanel3 = new javax.swing.JPanel();
         InfoLabel = new javax.swing.JLabel();
@@ -145,15 +146,23 @@ public class Ejercicios extends javax.swing.JFrame {
 
         PanelInfo.add(EJER2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/rushh8.png"))); // NOI18N
+
         javax.swing.GroupLayout EJER1Layout = new javax.swing.GroupLayout(EJER1);
         EJER1.setLayout(EJER1Layout);
         EJER1Layout.setHorizontalGroup(
             EJER1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 907, Short.MAX_VALUE)
+            .addGroup(EJER1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         EJER1Layout.setVerticalGroup(
             EJER1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 599, Short.MAX_VALUE)
+            .addGroup(EJER1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(105, Short.MAX_VALUE))
         );
 
         PanelInfo.add(EJER1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
@@ -290,7 +299,7 @@ public class Ejercicios extends javax.swing.JFrame {
         EJER2.setVisible(false);EJER2.setEnabled(false);
         EJER4.setVisible(false); EJER4.setEnabled(false);
         EJER5.setVisible(false);EJER5.setEnabled(false);
-        jScrollPane4.setVisible(true);jScrollPane4.setVisible(true);
+        jScrollPane4.setVisible(false);
     }//GEN-LAST:event_BtnEjer1ActionPerformed
 
     private void BtnEjer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjer2ActionPerformed
@@ -298,7 +307,7 @@ public class Ejercicios extends javax.swing.JFrame {
         EJER1.setVisible(false);
         EJER4.setVisible(false);
         EJER5.setVisible(false);
-        jScrollPane4.setVisible(true);
+        jScrollPane4.setVisible(false);
     }//GEN-LAST:event_BtnEjer2ActionPerformed
 
     private void BtnEjer4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjer4ActionPerformed
@@ -306,7 +315,7 @@ public class Ejercicios extends javax.swing.JFrame {
       EJER2.setVisible(false);
         EJER1.setVisible(false);
         EJER5.setVisible(false);
-        jScrollPane4.setVisible(true);
+        jScrollPane4.setVisible(false);
     }//GEN-LAST:event_BtnEjer4ActionPerformed
 
     private void BtnEjer5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjer5ActionPerformed
@@ -314,7 +323,7 @@ public class Ejercicios extends javax.swing.JFrame {
        EJER4.setVisible(false);
       EJER2.setVisible(false);
         EJER1.setVisible(false);
-        jScrollPane4.setVisible(true);
+        jScrollPane4.setVisible(false);
     }//GEN-LAST:event_BtnEjer5ActionPerformed
 
     /**
@@ -368,6 +377,7 @@ public class Ejercicios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane4;
     private com.raven.menu.Menu menu;
