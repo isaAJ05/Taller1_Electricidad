@@ -18,6 +18,7 @@ public class Ejercicios extends javax.swing.JFrame {
         setBackground(new Color(0, 0, 0, 0));
         menu.setSelectedMenu(5);
         menu.setSelectedLocation(331);
+        jScrollPane4.setVisible(false);
         init();
     }
 
@@ -72,6 +73,11 @@ public class Ejercicios extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         InfoLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -79,6 +85,7 @@ public class Ejercicios extends javax.swing.JFrame {
         panelBackground1.setBackground(new java.awt.Color(34, 34, 34));
 
         PanelInfo.setBackground(new java.awt.Color(255, 255, 255));
+        PanelInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane4.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane4.setBorder(null);
@@ -108,27 +115,36 @@ public class Ejercicios extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(InfoLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jScrollPane4.setViewportView(jPanel3);
 
-        javax.swing.GroupLayout PanelInfoLayout = new javax.swing.GroupLayout(PanelInfo);
-        PanelInfo.setLayout(PanelInfoLayout);
-        PanelInfoLayout.setHorizontalGroup(
-            PanelInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelInfoLayout.createSequentialGroup()
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 907, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
-        );
-        PanelInfoLayout.setVerticalGroup(
-            PanelInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-        );
+        PanelInfo.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
+
+        jButton1.setText("1");
+        PanelInfo.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 16, -1, -1));
+
+        jButton2.setText("2");
+        PanelInfo.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 16, -1, -1));
+
+        jButton3.setText("3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        PanelInfo.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 16, -1, -1));
+
+        jButton4.setText("4");
+        PanelInfo.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 16, -1, -1));
+
+        jButton5.setText("5");
+        PanelInfo.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(163, 16, -1, -1));
 
         javax.swing.GroupLayout panelBackground1Layout = new javax.swing.GroupLayout(panelBackground1);
         panelBackground1.setLayout(panelBackground1Layout);
@@ -149,7 +165,7 @@ public class Ejercicios extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelBackground1Layout.createSequentialGroup()
-                        .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, 643, Short.MAX_VALUE)
+                        .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
                     .addComponent(PanelInfo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
@@ -168,6 +184,10 @@ public class Ejercicios extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        jScrollPane4.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -208,6 +228,11 @@ public class Ejercicios extends javax.swing.JFrame {
     private javax.swing.JLabel InfoLabel;
     private javax.swing.JPanel PanelInfo;
     private com.raven.component.Header header;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane4;
