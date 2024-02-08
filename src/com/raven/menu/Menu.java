@@ -194,17 +194,17 @@ public class Menu extends javax.swing.JPanel {
         imageAvatar1.setBorderSpace(2);
         imageAvatar1.setGradientColor1(new java.awt.Color(18, 130, 227));
         imageAvatar1.setGradientColor2(new java.awt.Color(226, 45, 60));
-        imageAvatar1.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/logo.jpg"))); // NOI18N
+        imageAvatar1.setImage(new javax.swing.ImageIcon(getClass().getResource("/img/logooo.jpg"))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(117, 117, 117));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Nombre Programa");
+        jLabel1.setText("Taller #1");
 
         jLabel2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(154, 154, 154));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Taller#1 Fisica Electricidad");
+        jLabel2.setText("Física Electricidad");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
