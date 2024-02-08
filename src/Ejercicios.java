@@ -155,8 +155,9 @@ public class Ejercicios extends javax.swing.JFrame {
         EJER2Layout.setVerticalGroup(
             EJER2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EJER2Layout.createSequentialGroup()
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 1955, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jLabel5)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         PanelInfo.add(EJER2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
