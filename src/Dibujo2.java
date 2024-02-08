@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 public class Dibujo2 extends javax.swing.JFrame {
 
    private int currentIndex;
-   private String[] imagePaths = {"Gifs/CC1.png", "Gifs/CC2.png", "Gifs/CC3.png","Gifs/CC4.png"}; // Rutas de las imágenes en el directorio de recursos
+   private String[] imagePaths = {"Gifs/CC1.png", "Gifs/CC2.png", "Gifs/CC3.png","Gifs/CC4.png","Gifs/CC5.png","Gifs/CC6.png"}; // Rutas de las imágenes en el directorio de recursos
 
     public Dibujo2() {
         initComponents();
@@ -80,7 +80,7 @@ public class Dibujo2 extends javax.swing.JFrame {
     private void showImage(int index) {
         if (index==0){
             prevButton.setVisible(false);
-        }else if (index==3){
+        }else if (index==5){
             nextButton.setVisible(false);
         }else{
             prevButton.setVisible(true);
@@ -123,7 +123,8 @@ public class Dibujo2 extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tekton Pro Cond", 0, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(76, 154, 198));
-        jLabel1.setText("Carga por Contacto: Ebonita y Esfera");
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Carga por Contacto");
 
         imageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gifs/CC1.png"))); // NOI18N
 
