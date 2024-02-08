@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 public class Dibujo1 extends javax.swing.JFrame {
 
    private int currentIndex;
-   private String[] imagePaths = {"Gifs/CI1.png", "Gifs/CI2.png", "Gifs/CI3.png","Gifs/CI4.png"}; // Rutas de las imágenes en el directorio de recursos
+   private String[] imagePaths = {"Gifs/CI1.png", "Gifs/CI2.png", "Gifs/CI3.png","Gifs/CI4.png","Gifs/CI5.png"}; // Rutas de las imágenes en el directorio de recursos
 
     public Dibujo1() {
         initComponents();
@@ -81,7 +81,7 @@ public class Dibujo1 extends javax.swing.JFrame {
     private void showImage(int index) {
         if (index==0){
             prevButton.setVisible(false);
-        }else if (index==3){
+        }else if (index==4){
             nextButton.setVisible(false);
         }else{
             prevButton.setVisible(true);
