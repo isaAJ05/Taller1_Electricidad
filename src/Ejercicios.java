@@ -14,6 +14,8 @@ public class Ejercicios extends javax.swing.JFrame {
     public Ejercicios() {
         initComponents();
         setBackground(new Color(0, 0, 0, 0));
+        InfoLabel.setSize(1000, 3000);
+        //jLabel1.setSize(1000, 800);
         menu.setSelectedMenu(5);
         menu.setSelectedLocation(331);
         jScrollPane4.setVisible(false);
@@ -191,10 +193,10 @@ public class Ejercicios extends javax.swing.JFrame {
         jScrollPane4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         jScrollPane4.setHorizontalScrollBar(null);
         jScrollPane4.setOpaque(false);
-        jScrollPane4.setPreferredSize(new java.awt.Dimension(1000, 1500));
+        jScrollPane4.setPreferredSize(new java.awt.Dimension(1000, 1930));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setPreferredSize(new java.awt.Dimension(1137, 1500));
+        jPanel3.setPreferredSize(new java.awt.Dimension(1000, 1930));
 
         InfoLabel.setBackground(new java.awt.Color(255, 255, 255));
         InfoLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gifs/UareAnAngeljustLikeUS.gif"))); // NOI18N
@@ -205,14 +207,14 @@ public class Ejercicios extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(16, Short.MAX_VALUE)
-                .addComponent(InfoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 903, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(218, 218, 218))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(InfoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 973, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(148, 148, 148))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,7 +227,9 @@ public class Ejercicios extends javax.swing.JFrame {
 
         jScrollPane4.setViewportView(jPanel3);
 
-        PanelInfo.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
+        PanelInfo.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1020, 590));
+        jScrollPane4.getAccessibleContext().setAccessibleName("");
+        jScrollPane4.getAccessibleContext().setAccessibleDescription("");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
