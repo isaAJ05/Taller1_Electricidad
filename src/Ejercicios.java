@@ -82,12 +82,12 @@ public class Ejercicios extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         InfoLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        BtnEjer2 = new javax.swing.JButton();
-        BtnEjer3 = new javax.swing.JButton();
-        BtnEjer4 = new javax.swing.JButton();
-        BtnEjer5 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         BtnEjer1 = new javax.swing.JButton();
+        BtnEjer5 = new javax.swing.JButton();
+        BtnEjer3 = new javax.swing.JButton();
+        BtnEjer4 = new javax.swing.JButton();
+        BtnEjer2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -113,9 +113,9 @@ public class Ejercicios extends javax.swing.JFrame {
         EJER5Layout.setVerticalGroup(
             EJER5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EJER5Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(107, 107, 107)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(146, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         PanelInfo.add(EJER5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1020, 599));
@@ -227,56 +227,65 @@ public class Ejercicios extends javax.swing.JFrame {
 
         PanelInfo.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 907, 599));
 
-        BtnEjer2.setBackground(new java.awt.Color(253, 250, 250));
-        BtnEjer2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        BtnEjer2.setText("2");
-        BtnEjer2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnEjer2ActionPerformed(evt);
-            }
-        });
-        PanelInfo.add(BtnEjer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 16, -1, -1));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
-        BtnEjer3.setBackground(new java.awt.Color(253, 250, 250));
-        BtnEjer3.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        BtnEjer3.setText("3");
-        BtnEjer3.addActionListener(new java.awt.event.ActionListener() {
+        BtnEjer1.setBackground(new java.awt.Color(253, 250, 250));
+        BtnEjer1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
+        BtnEjer1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn 1.png"))); // NOI18N
+        BtnEjer1.setBorderPainted(false);
+        BtnEjer1.setContentAreaFilled(false);
+        BtnEjer1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BtnEjer1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnEjer3ActionPerformed(evt);
+                BtnEjer1ActionPerformed(evt);
             }
         });
-        PanelInfo.add(BtnEjer3, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 16, -1, -1));
-
-        BtnEjer4.setBackground(new java.awt.Color(253, 250, 250));
-        BtnEjer4.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        BtnEjer4.setText("4");
-        BtnEjer4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnEjer4ActionPerformed(evt);
-            }
-        });
-        PanelInfo.add(BtnEjer4, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 16, -1, -1));
 
         BtnEjer5.setBackground(new java.awt.Color(253, 250, 250));
         BtnEjer5.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        BtnEjer5.setText("5");
+        BtnEjer5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn 5.png"))); // NOI18N
+        BtnEjer5.setBorderPainted(false);
+        BtnEjer5.setContentAreaFilled(false);
+        BtnEjer5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BtnEjer5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnEjer5ActionPerformed(evt);
             }
         });
-        PanelInfo.add(BtnEjer5, new org.netbeans.lib.awtextra.AbsoluteConstraints(163, 16, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 204));
-
-        BtnEjer1.setBackground(new java.awt.Color(253, 250, 250));
-        BtnEjer1.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
-        BtnEjer1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-botón-de-radio-sin-marcar-22.png"))); // NOI18N
-        BtnEjer1.setBorderPainted(false);
-        BtnEjer1.setContentAreaFilled(false);
-        BtnEjer1.addActionListener(new java.awt.event.ActionListener() {
+        BtnEjer3.setBackground(new java.awt.Color(253, 250, 250));
+        BtnEjer3.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
+        BtnEjer3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn 3.png"))); // NOI18N
+        BtnEjer3.setBorderPainted(false);
+        BtnEjer3.setContentAreaFilled(false);
+        BtnEjer3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BtnEjer3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnEjer1ActionPerformed(evt);
+                BtnEjer3ActionPerformed(evt);
+            }
+        });
+
+        BtnEjer4.setBackground(new java.awt.Color(253, 250, 250));
+        BtnEjer4.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
+        BtnEjer4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn 4.png"))); // NOI18N
+        BtnEjer4.setBorderPainted(false);
+        BtnEjer4.setContentAreaFilled(false);
+        BtnEjer4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BtnEjer4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnEjer4ActionPerformed(evt);
+            }
+        });
+
+        BtnEjer2.setBackground(new java.awt.Color(253, 250, 250));
+        BtnEjer2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
+        BtnEjer2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btn 2.png"))); // NOI18N
+        BtnEjer2.setBorderPainted(false);
+        BtnEjer2.setContentAreaFilled(false);
+        BtnEjer2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BtnEjer2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnEjer2ActionPerformed(evt);
             }
         });
 
@@ -285,16 +294,28 @@ public class Ejercicios extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addContainerGap()
                 .addComponent(BtnEjer1)
-                .addContainerGap(966, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnEjer2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnEjer3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnEjer4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnEjer5)
+                .addContainerGap(760, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(BtnEjer1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BtnEjer1)
+                    .addComponent(BtnEjer2)
+                    .addComponent(BtnEjer3)
+                    .addComponent(BtnEjer4)
+                    .addComponent(BtnEjer5))
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         PanelInfo.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 50));
