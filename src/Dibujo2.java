@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 public class Dibujo2 extends javax.swing.JFrame {
 
    private int currentIndex;
-   private String[] imagePaths = {"Gifs/CC1.png", "Gifs/CC2.gif", "Gifs/CC3.png","Gifs/CC4.png"}; // Rutas de las imágenes en el directorio de recursos
+   private String[] imagePaths = {"Gifs/CC1.png", "Gifs/CC2.gif", "Gifs/CC3ok.png","Gifs/CC4ok.png"}; // Rutas de las imágenes en el directorio de recursos
 
     public Dibujo2() {
         initComponents();
