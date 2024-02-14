@@ -166,7 +166,7 @@ public class Ejercicios extends javax.swing.JFrame {
 
         EJER1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/rushh8.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Diagramas Taller 1e.png"))); // NOI18N
 
         javax.swing.GroupLayout EJER1Layout = new javax.swing.GroupLayout(EJER1);
         EJER1.setLayout(EJER1Layout);
